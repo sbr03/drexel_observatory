@@ -1,0 +1,159 @@
+@font-face {
+    font-family: "Space_Mono";
+    src: url("Space_Mono/Space_Mono-Regular.ttf") format("truetype");
+  }
+
+/* Color Palette 
+Primary Blue: #004080 Secondary Blue: #0066cc Red Accent: #ff3333 White: #ffffff Metallic Silver: #c0c0c0 */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .background-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('ivana-cajina-asuyh-_ZX54-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: rotateBackground 300s linear infinite;
+  }
+
+  @keyframes rotateBackground {
+    from {
+      transform: rotate(0deg) scale(2.4);
+    }
+    to {
+      transform: rotate(360deg) scale(2.4);
+    }
+  }
+
+.hamburger {
+  position: relative;
+  top: 15px;
+  left: 35px;
+  display: block;
+  width: 35px;
+  cursor: pointer;
+  z-index: 1;
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.hamburger .bar, .hamburger:after, .hamburger:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #FFF;
+  margin: 6px 0px;
+  transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+  transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after {
+  transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar {
+  opacity: 0;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+#sidebar{
+    position: absolute;
+    width: 225px;
+    height: 100%;
+    top: 0px;
+    background-color: #004080;
+    left: -250px;
+    transition: .4s;
+}
+#sidebar.active{
+    left: 0;
+}
+#sidebar ul li{
+    position: relative;
+    list-style: none;
+    font-size: 25px;
+    padding: 20px 0px;
+    
+}  
+
+a:link { 
+  text-decoration: none; 
+} 
+a:hover { 
+  text-decoration: underline; 
+} 
+
+.menu-item{
+  border-bottom: 3px solid red;
+}
+
+.sidebar-content{
+  padding: 70px 30px;
+}
+
+.menu-link{
+  color: white;
+}
+
+.main-content{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  color: white;
+  background-color: #004080;
+  text-align: center;
+}
+
+.welcome-header{
+  top: 70%;
+  height: 550px;
+  border-top-left-radius: 6%;
+  border-top-right-radius: 6%;
+
+}
+.open-house-header{
+  top: 50%;
+}
+
+.next-date{
+  top: 60%;
+  font-size: 30px;
+}
+
+.countdown{
+  top: 70%;
+  font-size: 40px;
+}
+
+.telescope-img{
+  width: 317px;
+  height: 432px;
+}

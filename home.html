@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="home.css">
+  <title>The Joseph R. Lynch Observatory</title>
+</head>
+<body>
+  <div class="background-container"></div>
+  <div class="hamburger" onclick="show()">
+    <div class="bar"></div>
+</div>
+<div id="sidebar">
+    <ul class="sidebar-content">
+        <li class="menu-item"><a href="home.html" class="menu-link">Home</a></li>
+        <li class="menu-item"><a href="/html/facility.html" class="menu-link">The Facility</a></li>
+        <li class="menu-item"><a href="/html/nights.html" class="menu-link">Public Nights</a></li>
+        <li class="menu-item"><a href="/html/images.html" class="menu-link">Images</a></li>
+        <li class="menu-item"><a href="https://www.cleardarksky.com/c/NePhilAprtPAkey.html" target="_blank" rel="noopener noreferrer" class="menu-link">Weather Forecast</a></li>
+        <li class="menu-item"><a href="https://www.heavens-above.com/?lat=39.95395&lng=-75.18607&alt=25&loc=Lynch+Observatory&tz=EST" target="_blank" rel="noopener noreferrer" class="menu-link">Satellite Predictions</a></li>
+        <li class="menu-item"><a href="https://www.physics.drexel.edu/observatory/skycal/2023.shtml" target="_blank" rel="noopener noreferrer" class="menu-link">Sky Calendar</a></li>
+    </ul>
+</div>
+
+<div class="main-content welcome-header"><h1>Welcome to the Joseph R. Lynch Observatory at Drexel University</h1></div>
+<div class="main-content open-house-header"><h2>Our next Open House is scheduled for:</h2></div>
+<div class="main-content next-date"><h2 id="date"></h2></div>
+<div class="main-content countdown"><p id="demo"></p></div>
+<!-- <div class="main-content countdown">Current Status: GOOD</p></div> -->
+
+
+
+</body>
+<script src="index.js"></script>
+<script src="/sunsetGenerator/index.js"></script>
+
+</html>
